@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Ordene os estados da Região Norte em ordem alfabética:",
+    "answers": ["Acre", "Amapá", "Amazonas", "Rondônia"]
+  },
+  {
+    "id": 2,
+    "question": "Coloque os presidentes do Brasil em ordem de mandato (do mais antigo para o mais recente):",
+    "answers": [
+      "Getúlio Vargas",
+      "Juscelino Kubitschek",
+      "Fernando Henrique Cardoso",
+      "Luiz Inácio Lula da Silva"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Coloque os continentes em ordem de tamanho (do maior para o menor):",
+    "answers": ["Ásia", "América do Norte", "América do Sul", "Oceania"]
+  },
+  {
+    "id": 4,
+    "question": "Coloque os planetas do Sistema Solar em ordem de proximidade ao Sol:",
+    "answers": ["Mercúrio", "Vênus", "Terra", "Marte"]
+  },
+  {
+    "id": 5,
+    "question": "Coloque os meses do ano em ordem (do primeiro ao último):",
+    "answers": ["Junho", "Julho", "Agosto", "Setembro"]
+  },
+  {
+    "id": 7,
+    "question": "Coloque os oceanos do mundo em ordem de tamanho (do maior para o menor):",
+    "answers": [
+      "Oceano Pacífico",
+      "Oceano Atlântico",
+      "Oceano Índico",
+      "Oceano Antártico"
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Coloque os elementos químicos em ordem crescente de número atômico:",
+    "answers": ["Hidrogênio", "Hélio", "Lítio", "Berílio"]
+  },
+  {
+    "id": 9,
+    "question": "Coloque os alimentos em ordem de cozimento, do mais rápido para o mais demorado:",
+    "answers": ["Miojo", "Arroz", "Ovo", "Feijão"]
+  },
+  {
+    "id": 10,
+    "question": "Coloque em ordem cronológica, do mais antigo para o mais recente, os acontecimentos históricos:",
+    "answers": [
+      "Queda de Constantinopla",
+      "Revolução Francesa",
+      "A Primeira Guerra Mundial",
+      "Queda do Muro de Berlim"
+    ]
+  }
+]
