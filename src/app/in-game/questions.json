@@ -17,7 +17,7 @@
   {
     "id": 3,
     "question": "Coloque os continentes em ordem de tamanho (do maior para o menor):",
-    "answers": ["Ásia", "América do Norte", "América do Sul", "Oceania"]
+    "answers": ["Ásia", "América", "África", "Antártida"]
   },
   {
     "id": 4,
@@ -58,5 +58,40 @@
       "A Primeira Guerra Mundial",
       "Queda do Muro de Berlim"
     ]
+  },
+  {
+    "id": 11,
+    "question": "Coloque os veículos em ordem crecente, de acordo com a quantidade de rodas:",
+    "answers": ["Monociclo", "Bicicleta", "Triciclo", "Quadriciclo"]
+  },
+  {
+    "id": 12,
+    "question": "Ordene corretamente os versos do sucesso de Zeca Pagodinho, \"Faixa Amarela\":",
+    "answers": [
+      "Eu quero presentear",
+      "A minha linda donzela",
+      "Não é prata nem é ouro",
+      "É uma coisa bem singela"
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Coloque os instrumentos musicais em ordem de tamanho (do maior para o menor):",
+    "answers": ["Piano", "Contrabaixo", "Violino", "Flauta doce"]
+  },
+  {
+    "id": 14,
+    "question": "Sombra, batom, esmalte e blush são usados, respectivamente, nas seguintes áreas do corpo:",
+    "answers": ["Olhos", "Boca", "Unhas", "Rosto"]
+  },
+  {
+    "id": 15,
+    "question": "Ordene cronologicamente os técnicos das seleções brasileiras das Copas do Mundo de 2006, 2010, 2014 e 2018",
+    "answers": ["Parreira", "Dunga", "Scolari", "Tite"]
+  },
+  {
+    "id": 16,
+    "question": "Ordene estas peças de vestuário de acordo com a parte do corpo em que é comumente utilizada, começando de cima para baixo:",
+    "answers": ["Turbante", "Echarpe", "Espartilho", "Cinta-liga"]
   }
 ]
