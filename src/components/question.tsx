@@ -17,7 +17,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface QuestionProps {
   question: string;
@@ -37,7 +37,16 @@ export function Question({
   randomAnswers,
 }: QuestionProps) {
   const COUNTDOWN_TIME = 15;
+
+  const startTime = useRef(Date.now());
+  const targetTime = useRef(Date.now() + COUNTDOWN_TIME * 1000);
+
   const [timer, setTimer] = useState(COUNTDOWN_TIME);
+
+  const timeLeft = () => {
+    const now = Date.now();
+    return Math.max(0, Math.floor((targetTime.current - now) / 1000));
+  };
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -48,7 +57,7 @@ export function Question({
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimer((prev) => prev - 1);
+      setTimer(timeLeft());
     }, 1000);
 
     if (timer <= 0) {
@@ -75,7 +84,7 @@ export function Question({
 
     toast.success(
       `Parabéns, você organizou todos os itens em ${
-        COUNTDOWN_TIME - timer
+        (Date.now() - startTime.current) / 1000
       } segundos!`
     );
   }
@@ -115,7 +124,7 @@ export function Question({
                                   );
                             }}
                             disabled={
-                              form.formState.isSubmitSuccessful || timer <= 0
+                              timer <= 0 || form.formState.isSubmitSuccessful
                             }
                           />
                         </FormControl>
