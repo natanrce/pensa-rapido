@@ -74,7 +74,7 @@ export function Question({
     }
 
     toast.success(
-      `Parabéns, você organizou todos os itens  em ${
+      `Parabéns, você organizou todos os itens em ${
         COUNTDOWN_TIME - timer
       } segundos!`
     );
@@ -133,19 +133,22 @@ export function Question({
         />
         <Button
           type="submit"
-          className="w-full relative transition-colors"
+          className="w-full relative transition-colors bg-green-600 text-white hover:bg-green-600"
           disabled={timer <= 0 || form.formState.isSubmitSuccessful}
         >
           <motion.div
-            className="absolute inset-0 left-0 top-0 bottom-0 bg-[#888]/30 rounded-l-md"
-            animate={{ width: `${(timer / COUNTDOWN_TIME) * 100}%` }}
+            className="absolute inset-0 left-0 top-0 bottom-0 bg-green-700 rounded-l-md"
+            animate={{
+              width: `${(timer / COUNTDOWN_TIME) * 100}%`,
+            }}
             transition={{
               duration: 1,
               ease: "linear",
-              type: "tween",
             }}
           />
-          <span className="relative z-10">Enviar</span>
+          <span className="relative z-10">
+            {timer <= 0 ? "Tempo Esgotado" : `Enviar (${timer})`}
+          </span>
         </Button>
       </form>
     </Form>

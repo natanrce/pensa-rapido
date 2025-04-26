@@ -93,5 +93,10 @@
     "id": 16,
     "question": "Ordene estas peças de vestuário de acordo com a parte do corpo em que é comumente utilizada, começando de cima para baixo:",
     "answers": ["Turbante", "Echarpe", "Espartilho", "Cinta-liga"]
+  },
+  {
+    "id": 17,
+    "question": "Ordene os pontos cardeais em sentido horário, começando pelo Norte:",
+    "answers": ["Norte", "Leste", "Sul", "Oeste"]
   }
 ]
